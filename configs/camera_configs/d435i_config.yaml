@@ -1,0 +1,31 @@
+device:
+  name: "Intel RealSense D435i"
+  serial_number: ""  # Add your camera's serial number here
+
+stream_config:
+  depth:
+    width: 848
+    height: 480
+    fps: 30
+    format: "Z16"
+  
+  color:
+    width: 848
+    height: 480
+    fps: 30
+    format: "RGB8"
+    
+  infrared:
+    enabled: true
+    width: 848
+    height: 480
+    fps: 30
+
+post_processing:
+  spatial_filter: true
+  temporal_filter: true
+  hole_filling: true
+
+imu:
+  enabled: true
+  fps: 400  # D435i supports up to 400Hz for IMU 

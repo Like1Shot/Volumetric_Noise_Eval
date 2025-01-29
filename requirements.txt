@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+opencv-python
+pandas
+pyyaml
+jupyter
+pyrealsense2  # Intel RealSense SDK Python wrapper
+open3d  # For 3D visualization 
