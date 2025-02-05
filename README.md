@@ -13,7 +13,30 @@ This repository contains implementations and evaluations of different methods fo
 
 1. Install the Intel RealSense SDK:
 ```bash
-brew install librealsense  # For MacOS
+#brew install librealsense  # For MacOS dont use! 
+# Just go with Ubuntu
+
+# For Ubuntu 
+sudo apt update
+sudo apt upgrade
+sudo apt install -y libusb-1.0-0-dev libgtk-3-dev cmake build-essential pkg-config libssl-dev
+
+sudo apt install cmake
+
+git clone https://github.com/IntelRealSense/librealsense.git
+
+cd librealsense
+
+mkdir build
+cd build
+
+cmake ..
+make
+sudo make install
+
+# Verify the Installation
+realsense-viewer
+
 ```
 
 2. Clone and setup the project:
